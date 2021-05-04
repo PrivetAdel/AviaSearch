@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {useSelector} from 'react-redux';
 
 export const withSortAndFilterData = (Component) => {
@@ -50,7 +50,8 @@ export const withSortAndFilterData = (Component) => {
       travelTime: ((a, b) => (a.flight.legs[0].duration + a.flight.legs[1].duration) - (b.flight.legs[0].duration + b.flight.legs[1].duration))
     };
 
-    const cards = data
+    const newData = JSON.parse(JSON.stringify(data));
+    const cards = newData
       .sort(sortFunctions[sortType])
       .filter(filterSegments)
       .filter(filterAirline)
