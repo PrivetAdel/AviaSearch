@@ -1,0 +1,133 @@
+.card__container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  p {
+    margin: 10px 0;
+  }
+}
+
+.card__header {
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: blue;
+  color: white;
+}
+
+.card__price {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+}
+
+.card__cost {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card__footnote {
+  font-size: 14px;
+}
+
+.card__there {
+  padding: 0 10px;
+  border-bottom: 2px solid blue;
+}
+
+.card__back {
+  padding: 0 10px;
+}
+
+.card__direction {
+  display: flex;
+  padding: 5px 10px;
+  border-bottom: 1px solid grey;
+
+  span {
+    color: blue;
+  }
+}
+
+.card__time-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.card__date {
+  color: blue;
+  font-weight: 400;
+}
+
+.card__time {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.card__duration {
+  position: relative;
+  padding-left: 23px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url('../../assets/icon-clock.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.card__transfer-count {
+  position: relative;
+  text-align: center;
+  min-height: 10px;
+
+  span {
+    padding: 0 5px;
+    color: orangered;
+    background-color: white;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background-color: grey;
+    z-index: -1;
+  }
+}
+
+.card__airline {
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.card__choose-btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: orangered;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

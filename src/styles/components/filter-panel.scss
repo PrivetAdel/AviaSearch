@@ -1,0 +1,23 @@
+.filter-panel__container {
+  padding: 20px;
+}
+
+.sort-block {
+  margin-bottom: 10px;
+}
+
+.sort-block,
+.filter-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-block__title {
+  color: gray;
+  margin: 25px 0 15px;
+}
+
+.sort-block__title {
+  color: gray;
+  margin: 0 0 15px;
+}
