@@ -1,4 +1,4 @@
-export const URL = 'http://localhost:3001/result';
+export const URL = 'result';
 export const SET_DATA = 'SET_DATA';
 export const CHANGE_SORT = 'CHANGE_SORT';
 export const CHANGE_SEGMENTS_FILTER = 'CHANGE_SEGMENTS_FILTER';
