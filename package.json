@@ -19,8 +19,8 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\"  \"json-server -p 3001 -w public/flights.json\"",
-    "build": "concurrently \"react-scripts build\"  \"json-server -p 3001 -w public/flights.json\"",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node server.js",
